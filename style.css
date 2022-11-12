@@ -15,6 +15,7 @@
 } */
 
 body {
+    background-color: #c5c3c6;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -31,6 +32,9 @@ header {
 }
 
 main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
 }
 
@@ -40,23 +44,41 @@ main {
 }
 
 #gameboard {
+    width: clamp(306px, 50%, 456px);
     border: 2px solid black;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
 .field {
+    align-items: center;
     aspect-ratio: 1 / 1;
+    background-color: #ededee;
     border: 1px solid black;
     cursor: pointer;
+    display: flex;
+    font-size: 4rem;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.field:hover {
+    background-color: #d8e4e9;
 }
 
 button {
+    background-color: #4c5c68;
     border: 2px solid black;
-    border-radius: 0.25rem;
+    border-radius: 0.5rem;
+    color: #b0e4db;
     cursor: pointer;
     font-size: 2rem;
-    padding: 0.5rem;
+    margin: 1.5rem;
+    padding: 0.5rem 1.25rem;
+}
+
+button:hover {
+    filter: brightness(90%);
 }
 
 footer {
