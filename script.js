@@ -147,7 +147,7 @@ const gameController = ( ()=> {
                 }
                 break;
             case 3:
-                if ((board[4] == x && board[5] == x) || (board[0] == x && board[5] == x)) {
+                if ((board[4] == x && board[5] == x) || (board[0] == x && board[6] == x)) {
                     gameController.setVictory(true);
                 }
                 break;
